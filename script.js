@@ -23,8 +23,8 @@ function makeNewTask() {
   changeCount();
 }
 
-const addbnt = document.querySelector("#addbnt");
-addbnt.addEventListener("click", makeNewTask);
+const addbtn = document.querySelector("#addbtn");
+addbtn.addEventListener("click", makeNewTask);
 
 function showList() {
   const openListcontainer = document.querySelector("#opentasks");
@@ -36,7 +36,7 @@ function showList() {
   task_array.forEach((task) => {
     console.log(task);
     const clone = document.querySelector("template").content.cloneNode(true);
-    const deleteBtn = clone.querySelector(".deletebnt");
+    const deleteBtn = clone.querySelector(".deletebtn");
     const checkbox = clone.querySelector(".task_completed");
 
     // delete knappen //

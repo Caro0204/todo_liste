@@ -95,25 +95,21 @@ li {
   padding-right: 12px;
 }
 
-/******* knap ********/
+/******* add icon ********/
 
-#addbnt {
+#addbtn {
   width: 10%;
   cursor: pointer;
 }
 
-.active {
-  display: block;
-}
 /******* delete icon ******/
 
-.deletebnt {
+.deletebtn {
   width: 5%;
   cursor: pointer;
-  /* opacity: 0; */
 }
 
-.deletebnt.clicked {
+.deletebtn.clicked {
   animation: disappearAnimation 2s ease-out;
 }
 
