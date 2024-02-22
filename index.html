@@ -16,10 +16,14 @@
 <body>
     <h1>To do - list</h1>
     <div id="baggrund">
+        <div class="count todo_box">
+            <h2>Tasks
+            </h2>
+            <h2 id="todocount" class="count_top">#</h2>
+        </div>
         <template>
             <li><input id="checkbox" type="checkbox" class="task_completed">
                 <p>gøre rent</p>
-                <!-- <button id="deletebnt" type="button">delete</button> -->
                 <img class="deletebnt" src="delete.svg" alt="delete">
             </li>
         </template>
@@ -28,13 +32,16 @@
 
         </ul>
         <div class="add_box">
-            <input id="userinput" type="text">
+            <input id="userinput" type="text" placeholder="Add new task">
             <!-- <button id="addbnt" type="button">add</button> -->
             <img id="addbnt" src="add-circle.svg" alt="add-circle">
 
         </div>
         <div class="done_box">
-            <h2>Completed tasks:</h2>
+            <div class="count">
+                <h2>Completed tasks</h2>
+                <h2 id="donecount" class="count_bund">#</h2>
+            </div>
         </div>
         <ul id="completedtasks">
 

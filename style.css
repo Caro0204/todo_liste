@@ -14,20 +14,22 @@ img {
   display: block;
 }
 #baggrund {
-  background-color: #56568d;
+  background-color: #2c466f;
   padding: 20px;
   border-radius: 45px;
   border: 2px solid lightgrey;
 }
 ul {
   padding: 20px;
+  padding-top: 2px;
 }
 h1 {
   font-family: "Island Moments", cursive;
   font-size: 5rem;
   text-align: center;
   padding-top: 20px;
-  color: #56568d;
+  /* color: #56568d; */
+  color: #2c466f;
 }
 
 p,
@@ -40,7 +42,7 @@ h2 {
 h2 {
   font-size: 1.7rem;
 }
-
+/*************************************************/
 .add_box {
   padding: 20px;
   display: flex;
@@ -50,7 +52,15 @@ h2 {
 
 .done_box {
   padding: 20px;
+  padding-bottom: 1px;
+  padding-left: 4px;
   border-top: 1px solid white;
+}
+.todo_box {
+  padding: 20px;
+  padding-bottom: 1px;
+  padding-top: 3px;
+  padding-left: 4px;
 }
 #userinput {
   padding: 2.5px;
@@ -60,14 +70,33 @@ h2 {
   padding-left: 10px;
 }
 
-#checkbox {
-  padding: 2.5px;
+.count {
+  display: flex;
+  justify-content: space-between;
 }
-/******* knap ********/
 
+.count_top {
+  text-align: end;
+}
 li {
   display: flex;
+  align-items: center;
 }
+
+/******* tal *********/
+
+#todocount,
+#donecount {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 6px;
+  font-size: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/******* knap ********/
+
 #addbnt {
   width: 10%;
   cursor: pointer;
@@ -77,10 +106,6 @@ li {
   display: block;
 }
 /******* delete icon ******/
-/* #deletebnt:hover {
-  opacity: 1;
-  transition: 0.2s ease-in;
-} */
 
 .deletebnt {
   width: 5%;
@@ -92,15 +117,16 @@ li {
   animation: disappearAnimation 2s ease-out;
 }
 
-/* @keyframes slideOut {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
+/********** check box ***********/
 
-.deletebnt.slideout {
-  animation: slideOut 1s forwards;
-} */
+input[type="checkbox"] {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+}
+input[type="checkbox"]:checked {
+  accent-color: rgb(75, 133, 168);
+}
+#checkbox {
+  border-radius: 50%;
+}
